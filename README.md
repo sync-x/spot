@@ -1,2 +1,3 @@
-# Spot.
-Enabling Plant disease diagnosis on your fingertips
+# S P O T.
+### Saving Plants on Time
+Enabling Plant Disease Diagnosis on your fingertips
