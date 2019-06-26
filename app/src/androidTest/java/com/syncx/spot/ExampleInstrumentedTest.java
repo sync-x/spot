@@ -1,4 +1,4 @@
-package com.example.spot;
+package com.syncx.spot;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.spot", appContext.getPackageName());
+        assertEquals("com.syncx.spot", appContext.getPackageName());
     }
 }

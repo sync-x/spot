@@ -1,4 +1,4 @@
-package com.example.spot;
+package com.syncx.spot;
 
 import org.junit.Test;
 

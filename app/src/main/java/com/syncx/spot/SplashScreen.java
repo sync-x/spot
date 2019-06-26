@@ -1,4 +1,4 @@
-package com.example.spot;
+package com.syncx.spot;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -15,10 +15,9 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashScreen.this,MainActivity.class));
+                startActivity(new Intent(SplashScreen.this, MainActivity.class));
                 finish();
             }
-        },3000);
+        },5000);
     }
-
 }
