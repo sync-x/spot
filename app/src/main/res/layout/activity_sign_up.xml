@@ -9,6 +9,8 @@
     android:background="@color/mainColor">
 
     <android.support.design.card.MaterialCardView
+        style="@style/Widget.MaterialComponents.CardView"
+        android:id="@+id/cardview"
         android:layout_width="match_parent"
         android:layout_height="450dp"
         android:background="#fff"
