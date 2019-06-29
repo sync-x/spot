@@ -12,7 +12,7 @@
         style="@style/Widget.MaterialComponents.CardView"
         android:id="@+id/cardview"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="460dp"
         android:background="#fff"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
@@ -41,11 +41,9 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="35dp"
-                android:layout_marginEnd="10dp"
-                android:paddingStart="10dp"
-                android:paddingEnd="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:textColorHint="@color/colorPrimaryDark"
                 app:boxCornerRadiusBottomEnd="5dp"
                 app:boxCornerRadiusBottomStart="5dp"
@@ -68,11 +66,8 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:paddingStart="10dp"
-                android:paddingEnd="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:textColorHint="@color/colorPrimaryDark"
                 app:boxCornerRadiusBottomEnd="5dp"
                 app:boxCornerRadiusBottomStart="5dp"
@@ -85,21 +80,19 @@
                 <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email Address"
+                    android:hint="Email"
                     android:textColor="@color/black"
-                    android:inputType="textEmailAddress"
+                    android:inputType="text"
                     android:id="@+id/email"/>
             </android.support.design.widget.TextInputLayout>
+
 
             <android.support.design.widget.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:paddingStart="10dp"
-                android:paddingEnd="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:textColorHint="@color/colorPrimaryDark"
                 app:boxCornerRadiusBottomEnd="5dp"
                 app:boxCornerRadiusBottomStart="5dp"
@@ -117,6 +110,38 @@
                     android:inputType="textPassword"
                     android:id="@+id/password"/>
             </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                app:strokeColor="#000"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/mainColor"
+                android:id="@+id/login"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:text="LOGIN"/>
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                app:strokeColor="#000"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/mainColor"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:text="Sign up"/>
+
         </LinearLayout>
+
+
     </android.support.design.card.MaterialCardView>
+
+
 </RelativeLayout>
