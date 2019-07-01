@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login"
+    tools:context=".LoginActivity"
     android:background="@color/mainColor"
     >
 
@@ -105,6 +105,7 @@
                 android:orientation="vertical">
 
                 <android.support.design.button.MaterialButton
+                    android:onClick="logInUser"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginTop="15dp"
@@ -128,21 +129,13 @@
                     android:text="Don't have an account? Sign Up"
                     android:textColor="@color/mainColor"
                     android:textStyle="bold"
+                    android:onClick="goToSignUp"
                     android:fontFamily="@font/productsans"
                     android:textAlignment="viewStart"
                     android:textAllCaps="false"
                     android:textSize="19sp" />
-
-
-
             </LinearLayout>
-
-
-
         </LinearLayout>
-
-
-
     </android.support.design.card.MaterialCardView>
 </RelativeLayout>
 
