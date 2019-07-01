@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp"
+    tools:context=".SignUpActivity"
     android:background="@color/mainColor">
 
 
@@ -129,12 +129,13 @@
 
             </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <android.support.design.button.MaterialButton
+                    android:onClick="signUp"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginTop="15dp"
@@ -143,39 +144,26 @@
                     app:strokeColor="#000"
                     app:strokeWidth="2dp"
                     android:backgroundTint="@color/mainColor"
-                    android:id="@+id/btnLogin"
+                    android:id="@+id/signup"
                     android:textSize="22sp"
                     android:fontFamily="@font/productsans"
                     android:textColor="#fff"
                     android:text="Sign Up"/>
 
-
-
-                    <android.support.design.button.MaterialButton
-                        style="@style/Widget.MaterialComponents.Button.TextButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Already have an account? Login"
-                        android:textColor="@color/mainColor"
-                        android:textStyle="bold"
-
-                        android:fontFamily="@font/productsans"
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="false"
-                        android:textSize="18.5sp" />
-
-
+                <android.support.design.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account? Login"
+                    android:textColor="@color/mainColor"
+                    android:textStyle="bold"
+                    android:onClick="goToLogin"
+                    android:fontFamily="@font/productsans"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textSize="18.5sp" />
 
             </LinearLayout>
-
-
-
         </LinearLayout>
-
-
-
     </android.support.design.card.MaterialCardView>
-
-
-
 </RelativeLayout>
