@@ -2,10 +2,12 @@ package com.syncx.spot;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RelativeLayout;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -15,6 +17,9 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class SignUpActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
+    RelativeLayout relativeLayout;
+    Snackbar snackbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +29,10 @@ public class SignUpActivity extends AppCompatActivity {
         FirebaseUser user = mAuth.getCurrentUser();
 
         if (user != null){
-            // add snackbar
+           showSnackbar();
             startActivity(new Intent(SignUpActivity.this,MainActivity.class));
         }
+
     }
 
     public void goToLogin(View view){
@@ -45,12 +51,21 @@ public class SignUpActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             FirebaseUser user = mAuth.getCurrentUser();
-                            // add snackbar
+                            showSnackbar();
                             startActivity(new Intent(SignUpActivity.this,MainActivity.class));
                         } else {
-                            // add snackbar
+                            showSnackbar1();
                         }
                     }
                 });
+    }
+
+    public void showSnackbar(){
+        Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content),"Welcome",Snackbar.LENGTH_LONG).setDuration(2000);
+        snackbar.show();
+    }
+    public void showSnackbar1(){
+        Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content),"Error",Snackbar.LENGTH_LONG).setDuration(2000);
+        snackbar.show();
     }
 }
