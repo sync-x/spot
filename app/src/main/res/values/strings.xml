@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">SPOT</string>
+    <string name="spot">S P O T.</string>
+    <string name="classifier">Classifier</string>
+    <string name="weather">Weather</string>
+    <string name="near_me">Near me</string>
+    <string name="profile">Profile</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login_prompt">Already have an account? Login</string>
+    <string name="sign_up_prompt">Don\'t have an account? Sign Up</string>
+    <string name="login">Login</string>
 </resources>
