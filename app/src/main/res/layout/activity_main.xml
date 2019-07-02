@@ -5,15 +5,199 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/layoutSnackbar">
+    android:id="@+id/layoutSnackbar"
+    android:background="#000">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_below="@id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S P O T."
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/productsansbold"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"/>
+
+    <RelativeLayout
+        android:layout_below="@id/name"
+        android:layout_above="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cardview1"
+            android:layout_width="205dp"
+            android:layout_height="200dp"
+            android:backgroundTint="#000">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <ImageView
+                    android:id="@+id/cameraBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/camera"
+                    android:layout_margin="60dp"/>
+
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/classifierTV"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textColor="#fff"
+                    android:textStyle="normal"
+                    android:text="Classifier"/>
+
+
+            </RelativeLayout>
+
+
+        </android.support.design.card.MaterialCardView>
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cardview3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/cardview1"
+            android:backgroundTint="#000">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/cloudBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="40dp"
+                    android:src="@drawable/cloud" />
+
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/WeatherTV"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textColor="#fff"
+                    android:textStyle="normal"
+                    android:text="Weather"/>
+
+
+
+            </RelativeLayout>
+
+
+
+        </android.support.design.card.MaterialCardView>
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cardview2"
+            android:layout_below="@id/cardview1"
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#000"
+           >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/nearby"
+                    android:layout_margin="40dp"/>
+
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/nearbyTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textColor="#fff"
+                    android:textStyle="normal"
+                    android:text="Near me"/>
+
+            </RelativeLayout>
+
+
+
+        </android.support.design.card.MaterialCardView>
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cardview4"
+            android:layout_below="@id/cardview3"
+            android:layout_toEndOf="@id/cardview2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#000">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile"
+                    android:layout_margin="30dp"/>
+
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/profileTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textColor="#fff"
+                    android:textStyle="normal"
+                    android:text="Profile"/>
+
+
+            </RelativeLayout>
+
+
+        </android.support.design.card.MaterialCardView>
+
+
+
+    </RelativeLayout>
 
     <android.support.design.button.MaterialButton
         android:id="@+id/logout"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentBottom="true"
         android:onClick="logOutUser"
         android:layout_width="wrap_content"
-        android:textSize="40sp"
+        android:textSize="15dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/mainColor"
         android:layout_centerInParent="true"
         android:text="LOG OUT TEST"/>
+
+
 </RelativeLayout>
