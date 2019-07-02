@@ -56,7 +56,11 @@ public class SignUpActivity extends AppCompatActivity {
                             showSnackbar();
                             startActivity(new Intent(SignUpActivity.this,MainActivity.class));
                         } else {
-                            showSnackbar1();
+                            String exc = task.getException().toString();
+                            String[] split = exc.split(":",2);
+                            String exception = split[1].trim();
+                            Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content),exception,Snackbar.LENGTH_LONG).setDuration(2000);
+                            snackbar.show();
                         }
                     }
                 });
@@ -66,8 +70,5 @@ public class SignUpActivity extends AppCompatActivity {
         Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content),"Welcome",Snackbar.LENGTH_LONG).setDuration(2000);
         snackbar.show();
     }
-    public void showSnackbar1(){
-        Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content),"Error",Snackbar.LENGTH_LONG).setDuration(2000);
-        snackbar.show();
-    }
+
 }
