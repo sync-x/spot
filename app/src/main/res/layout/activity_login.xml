@@ -131,7 +131,7 @@
                     android:textStyle="bold"
                     android:onClick="goToSignUp"
                     android:fontFamily="@font/productsans"
-                    android:textAlignment="viewStart"
+                    android:textAlignment="center"
                     android:textAllCaps="false"
                     android:textSize="16sp" />
             </LinearLayout>
