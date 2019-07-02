@@ -47,8 +47,12 @@ public class LoginActivity extends AppCompatActivity {
                             showSnackbar();
                             startActivity(new Intent(LoginActivity.this,MainActivity.class));
                         } else {
-                            System.out.println(task.getException());
-                           showSnackbar1();
+                            String exc = task.getException().toString();
+                            String[] split = exc.split(":",2);
+                            String exception = split[1].trim();
+                            Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content),exception,Snackbar.LENGTH_LONG).setDuration(2000);
+                            snackbar.show();
+
                         }
 
                     }
@@ -59,8 +63,6 @@ public class LoginActivity extends AppCompatActivity {
         Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content),"Welcome",Snackbar.LENGTH_LONG).setDuration(2000);
         snackbar.show();
     }
-    public void showSnackbar1(){
-        Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content),"Wrong Password or Email id!",Snackbar.LENGTH_LONG).setDuration(2000);
-        snackbar.show();
-    }
+
+
 }
