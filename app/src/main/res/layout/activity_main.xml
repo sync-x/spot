@@ -41,26 +41,27 @@
         android:layout_above="@id/logout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
             android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="205dp"
-                    android:layout_height="200dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/classifierIV"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
                         android:src="@drawable/camera"
-                        android:layout_marginTop="60dp"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginEnd="60dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
                         android:layout_marginBottom="10dp"/>
 
                     <TextView
@@ -75,18 +76,17 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="205dp"
-                    android:layout_height="200dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/weatherIV"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
                         android:src="@drawable/cloud"
-                        android:layout_marginTop="60dp"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginEnd="60dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
                         android:layout_marginBottom="10dp"/>
 
                     <TextView
@@ -104,21 +104,21 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="205dp"
-                    android:layout_height="200dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/nearbyIV"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
                         android:src="@drawable/nearby"
-                        android:layout_marginTop="60dp"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginEnd="60dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
                         android:layout_marginBottom="10dp"/>
 
                     <TextView
@@ -133,18 +133,17 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="205dp"
-                    android:layout_height="200dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/profileIV"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
                         android:src="@drawable/profile"
-                        android:layout_marginTop="60dp"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginEnd="60dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
                         android:layout_marginBottom="10dp"/>
 
                     <TextView
