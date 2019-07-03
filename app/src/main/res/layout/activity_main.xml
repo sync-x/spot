@@ -78,7 +78,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:onClick="goToWeather">
 
                     <ImageView
                         android:id="@+id/weatherIV"
@@ -110,7 +111,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:onClick="goToNearMe">
 
                     <ImageView
                         android:id="@+id/nearbyIV"
@@ -135,7 +137,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:onClick="goToProfile">
 
                     <ImageView
                         android:id="@+id/profileIV"

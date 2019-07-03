@@ -35,4 +35,13 @@ public class MainActivity extends AppCompatActivity {
         Snackbar snackbar = Snackbar.make(relativeLayout,"Log Out successful",Snackbar.LENGTH_LONG).setDuration(2000);
         snackbar.show();
     }
+    public void goToProfile(View view){
+        startActivity(new Intent(MainActivity.this,profile.class));
+    }
+    public void goToNearMe(View view){
+        startActivity(new Intent(MainActivity.this,nearMe.class));
+    }
+    public void goToWeather(View view){
+        startActivity(new Intent(MainActivity.this,weather.class));
+    }
 }
