@@ -85,6 +85,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
+                    android:onClick="goToWeather"
                     android:id="@+id/weatherIV"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -117,6 +118,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
+                    android:onClick="goToNearMe"
                     android:id="@+id/nearbyIV"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -138,6 +140,7 @@
         </android.support.design.card.MaterialCardView>
 
         <android.support.design.card.MaterialCardView
+            android:onClick="goToWeather"
             android:id="@+id/profile_card"
             android:layout_below="@id/weather_card"
             android:layout_toEndOf="@id/nearme_card"
@@ -150,6 +153,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
+                    android:onClick="goToProfile"
                     android:id="@+id/profileIV"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
