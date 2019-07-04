@@ -1,14 +1,11 @@
 package com.syncx.spot;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -36,12 +33,15 @@ public class MainActivity extends AppCompatActivity {
         snackbar.show();
     }
     public void goToProfile(View view){
-        startActivity(new Intent(MainActivity.this,profile.class));
+        startActivity(new Intent(MainActivity.this, ProfileActivity.class));
     }
     public void goToNearMe(View view){
-        startActivity(new Intent(MainActivity.this,nearMe.class));
+        startActivity(new Intent(MainActivity.this, NearMeActivity.class));
     }
     public void goToWeather(View view){
-        startActivity(new Intent(MainActivity.this,weather.class));
+        startActivity(new Intent(MainActivity.this, WeatherActivity.class));
+    }
+    public void goToClassify(View view){
+        startActivity(new Intent(MainActivity.this, ClassifierActivity.class));
     }
 }

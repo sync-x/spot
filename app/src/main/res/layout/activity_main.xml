@@ -45,6 +45,7 @@
             android:id="@+id/classifier_card"
             android:layout_width="205dp"
             android:layout_height="200dp"
+            android:onClick="goToClassify"
             android:backgroundTint="#000">
 
             <RelativeLayout
