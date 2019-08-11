@@ -14,4 +14,15 @@
         android:textStyle="bold"
         android:layout_centerInParent="true"
         android:textSize="30sp"/>
+
+    <android.support.design.widget.BottomNavigationView
+        style="@style/Widget.MaterialComponents.BottomNavigationView"
+        android:id="@+id/bottom_navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav"
+        app:itemIconTint="#9EFD8A"/>
+
 </RelativeLayout>
