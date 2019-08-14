@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_classify"
+        android:icon="@drawable/camera"
+        android:title="Classify"/>
+
+    <item
+        android:id="@+id/action_weather"
+        android:icon="@drawable/cloud"
+        android:title="@string/weather"/>
+
+    <item
+        android:id="@+id/action_nearme"
+        android:icon="@drawable/nearby"
+        android:title="@string/near_me"/>
+
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/profile"
+        android:title="@string/profile"/>
+</menu>

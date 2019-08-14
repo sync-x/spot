@@ -5,187 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/layoutSnackbar"
-    android:background="#000">
+    android:background="#fff">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/logo_name"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp">
-
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:src="@drawable/logo" />
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/spot"
-            android:textAlignment="center"
-            android:textSize="38sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/productsansbold"
-            android:padding="15dp"
-            android:textColor="#fff"/>
-
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_below="@id/logo_name"
-        android:layout_above="@+id/logout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <android.support.design.card.MaterialCardView
-            android:id="@+id/classifier_card"
-            android:layout_width="205dp"
-            android:layout_height="200dp"
-            android:backgroundTint="#000">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/classifierIV"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/camera"
-                    android:layout_margin="60dp"/>
-
-                <TextView
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/classifierTV"
-                    android:layout_marginBottom="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    android:textColor="#fff"
-                    android:textStyle="normal"
-                    android:text="@string/classifier"/>
-            </RelativeLayout>
-        </android.support.design.card.MaterialCardView>
-
-        <android.support.design.card.MaterialCardView
-            android:id="@+id/weather_card"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginStart="0dp"
-            android:layout_toEndOf="@id/classifier_card"
-            android:backgroundTint="#000">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:onClick="goToWeather"
-                    android:id="@+id/weatherIV"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="40dp"
-                    android:src="@drawable/cloud" />
-
-                <TextView
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/weatherTV"
-                    android:layout_marginBottom="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    android:textColor="#fff"
-                    android:textStyle="normal"
-                    android:text="@string/weather"/>
-            </RelativeLayout>
-        </android.support.design.card.MaterialCardView>
-
-        <android.support.design.card.MaterialCardView
-            android:id="@+id/nearme_card"
-            android:layout_below="@id/classifier_card"
-            android:layout_width="205dp"
-            android:layout_height="match_parent"
-            android:backgroundTint="#000">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:onClick="goToNearMe"
-                    android:id="@+id/nearbyIV"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/nearby"
-                    android:layout_margin="40dp"/>
-
-                <TextView
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/nearbyTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    android:textColor="#fff"
-                    android:textStyle="normal"
-                    android:text="@string/near_me"/>
-
-            </RelativeLayout>
-        </android.support.design.card.MaterialCardView>
-
-        <android.support.design.card.MaterialCardView
-            android:onClick="goToWeather"
-            android:id="@+id/profile_card"
-            android:layout_below="@id/weather_card"
-            android:layout_toEndOf="@id/nearme_card"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="#000">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:onClick="goToProfile"
-                    android:id="@+id/profileIV"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/profile"
-                    android:layout_margin="30dp"/>
-
-                <TextView
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/profileTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    android:textColor="#fff"
-                    android:textStyle="normal"
-                    android:text="@string/profile"/>
-
-            </RelativeLayout>
-        </android.support.design.card.MaterialCardView>
-
-    </RelativeLayout>
-
-    <android.support.design.button.MaterialButton
-        android:id="@+id/logout"
-        android:layout_marginTop="40dp"
-        android:layout_alignParentBottom="true"
-        android:onClick="logOutUser"
+    <TextView
         android:layout_width="wrap_content"
-        android:textSize="15dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/mainColor"
+        android:text="First screen after login..."
+        android:fontFamily="@font/productsans"
+        android:textSize="30sp"
         android:layout_centerInParent="true"
-        android:text="Log out"/>
+        android:textColor="#000"
+        android:id="@+id/randomText"
+        android:gravity="center"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_nav"
+        android:id="@+id/fragment_container"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        android:id="@+id/bottom_nav"
+        android:background="#000"
+        app:itemIconTint="@color/mainGreen"
+        app:itemTextColor="#fff"/>
 
 </RelativeLayout>
